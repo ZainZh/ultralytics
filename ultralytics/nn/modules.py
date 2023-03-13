@@ -428,7 +428,7 @@ class Detect(nn.Module):
             res.append(bboxes)
             res.append(scores)
         # 返回 tuple 不会导出报错
-    return tuple(res)
+        return tuple(res)
 
     def bias_init(self):
         # Initialize Detect() biases, WARNING: requires stride availability
